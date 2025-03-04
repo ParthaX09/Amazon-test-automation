@@ -18,12 +18,12 @@ class LoginPage:
         numberBox = WebDriverWait(self.driver, 10).until(
             EC.presence_of_element_located(LoginPage.number)
         )
-        numberBox.send_keys("7044940669")
-        # self.driver.find_element(*LoginPage.number).send_keys("7044940669")
+        numberBox.send_keys("--userId--")
+        
         self.driver.find_element(*LoginPage.cont).click()
 
     def get_pswd(self):
-        self.driver.find_element(*LoginPage.pswd).send_keys("Partha2003@amazon")
+        self.driver.find_element(*LoginPage.pswd).send_keys("--password--")
         self.driver.find_element(*LoginPage.submit).click()
 
 
